@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Check, Cloud, Zap, Lock, Globe, Home as HomeIcon, TrendingUp, ShoppingCart, LayoutDashboard, GraduationCap, ChevronLeft, ChevronRight, MessageCircle, Menu, X } from 'lucide-react';
 
 export default function Home() {
@@ -31,15 +32,17 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-5 flex justify-between items-center">
           <div className="flex items-center">
-            <Image src="/ast.png" alt="AsolaSMART-Tech" width={60} height={60} className="h-12 sm:h-16 w-auto" />
+            <Link href="/">
+              <Image src="/ast.png" alt="AsolaSMART-Tech" width={60} height={60} className="h-12 sm:h-16 w-auto cursor-pointer" />
+            </Link>
           </div>
           <div className="hidden md:flex gap-8 lg:gap-12 items-center absolute left-1/2 transform -translate-x-1/2">
-            <a href="#" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Home</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">About Us</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">What We Do</a>
-            <a href="#solutions" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Consulting Services</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Success Framework</a>
-            <a href="#contact" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Contact Us</a>
+            <Link href="/" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Home</Link>
+            <Link href="/about" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">About Us</Link>
+            <Link href="/services" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">What We Do</Link>
+            <Link href="/consulting" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Consulting Services</Link>
+            <Link href="/framework" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Success Framework</Link>
+            <Link href="/contact" className="text-gray-500 hover:text-gray-900 transition text-xs sm:text-sm">Contact Us</Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -59,12 +62,12 @@ export default function Home() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-4 py-4 space-y-3">
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Home</a>
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">About Us</a>
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">What We Do</a>
-              <a href="#solutions" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Consulting Services</a>
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Success Framework</a>
-              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Contact Us</a>
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Home</Link>
+              <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">About Us</Link>
+              <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">What We Do</Link>
+              <Link href="/consulting" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Consulting Services</Link>
+              <Link href="/framework" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Success Framework</Link>
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm">Contact Us</Link>
             </div>
           </div>
         )}
@@ -357,9 +360,15 @@ export default function Home() {
           </div>
 
           {/* Copyright */}
-          <p className="text-white/50 text-xs font-light text-center">
-            © 2026 AsolaSMART-Tech. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-white/50 text-xs font-light">
+              © 2026 AsolaSMART-Tech. All rights reserved.
+            </p>
+            <div className="flex gap-6 text-xs font-light">
+              <Link href="/privacy" className="text-white/60 hover:text-white transition">Privacy Policy</Link>
+              <Link href="/terms" className="text-white/60 hover:text-white transition">Terms of Service</Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
