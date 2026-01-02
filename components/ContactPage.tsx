@@ -59,9 +59,9 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-12">
-          <h2 className="text-2xl font-serif text-gray-900 mb-8 font-light">Send us a Message</h2>
-          <form className="grid md:grid-cols-2 gap-6">
+        <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-12 max-w-2xl mx-auto">
+          <h2 className="text-2xl font-serif text-gray-900 mb-8 font-light text-center">Send us a Message</h2>
+          <form className="space-y-6">
             <div>
               <label className="block text-sm font-light text-gray-700 mb-2">Full Name</label>
               <input 
@@ -78,7 +78,7 @@ export default function ContactPage() {
                 placeholder="your@email.com"
               />
             </div>
-            <div className="md:col-span-2">
+            <div>
               <label className="block text-sm font-light text-gray-700 mb-2">Subject</label>
               <input 
                 type="text" 
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 placeholder="How can we help?"
               />
             </div>
-            <div className="md:col-span-2">
+            <div>
               <label className="block text-sm font-light text-gray-700 mb-2">Message</label>
               <textarea 
                 rows={5}
@@ -94,7 +94,7 @@ export default function ContactPage() {
                 placeholder="Tell us more about your project..."
               ></textarea>
             </div>
-            <div className="md:col-span-2">
+            <div>
               <button className="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-full px-8 py-3 transition">
                 Send Message
               </button>

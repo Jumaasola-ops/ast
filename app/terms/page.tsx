@@ -2,6 +2,7 @@
 
 import TermsOfService from '@/components/TermsOfService';
 import { Menu, X } from 'lucide-react';
+import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -58,47 +59,7 @@ export default function TermsPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-blue-900 via-teal-800 to-cyan-900 text-white py-16 sm:py-20 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
-            <div className="space-y-4">
-              <h3 className="text-lg sm:text-xl font-light">Contact Us</h3>
-              <p className="text-white/70 text-xs sm:text-sm font-light">+254707907000</p>
-              <p className="text-white/70 text-xs sm:text-sm font-light">info@asolasmarttech.co.ke</p>
-              <p className="text-white/70 text-xs sm:text-sm font-light">Tech Hub, Innovation Park, Nairobi, Kenya</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-lg sm:text-xl font-light">Quick Links</h3>
-              <div className="space-y-2">
-                <Link href="/" className="text-white/70 hover:text-white transition text-xs sm:text-sm block font-light">Home</Link>
-                <Link href="/about" className="text-white/70 hover:text-white transition text-xs sm:text-sm block font-light">About Us</Link>
-                <Link href="/services" className="text-white/70 hover:text-white transition text-xs sm:text-sm block font-light">Services</Link>
-                <Link href="/contact" className="text-white/70 hover:text-white transition text-xs sm:text-sm block font-light">Contact</Link>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-lg sm:text-xl font-light">Company</h3>
-              <div className="space-y-2">
-                <a href="#" className="text-white/70 hover:text-white transition text-xs sm:text-sm block font-light">Blog</a>
-                <a href="#" className="text-white/70 hover:text-white transition text-xs sm:text-sm block font-light">Careers</a>
-                <a href="#" className="text-white/70 hover:text-white transition text-xs sm:text-sm block font-light">Partners</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-white/20 pt-8 sm:pt-12">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-white/50 text-xs font-light">
-                © 2026 AsolaSMART-Tech. All rights reserved.
-              </p>
-              <div className="flex gap-6 text-xs font-light">
-                <Link href="/privacy" className="text-white/60 hover:text-white transition">Privacy Policy</Link>
-                <Link href="/terms" className="text-white/60 hover:text-white transition">Terms of Service</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
