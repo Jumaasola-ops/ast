@@ -341,8 +341,8 @@ export default function Home() {
             <div>
               <h4 className="text-white font-light text-xs mb-3 uppercase tracking-wide">Contact</h4>
               <div className="space-y-1 text-xs font-light">
-                <p className="text-white/70"><a href="tel:+254200000001" className="hover:text-white transition">+254 20 0000 001</a></p>
-                <p className="text-white/70 break-all"><a href="mailto:info@asolasmarttech.com" className="hover:text-white transition">info@asolasmarttech.com</a></p>
+                <p className="text-white/70"><a href="tel:+254707907000" className="hover:text-white transition">+254707907000</a></p>
+                <p className="text-white/70 break-all"><a href="mailto:info@asolasmarttech.co.ke" className="hover:text-white transition">info@asolasmarttech.co.ke</a></p>
               </div>
             </div>
 
