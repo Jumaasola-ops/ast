@@ -3,12 +3,11 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "env": [
-    {
-      "key": "NEXT_PUBLIC_APP_NAME",
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": {
       "value": "AsolaSMART-Tech"
     }
-  ],
+  },
   "rewrites": [
     {
       "source": "/(.*)",
