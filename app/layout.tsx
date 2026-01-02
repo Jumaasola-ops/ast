@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "AsolaSMART-Tech | Smart Digital Systems",
   description: "We engineer innovative digital solutions that transform businesses. Cloud architecture, AI automation, and web solutions built for scale.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
 };
 
 export default function RootLayout({
