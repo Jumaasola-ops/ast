@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Logo: Bilhan Consultancy - Briefcase/Professional -->
+  <!-- Briefcase outline -->
+  <rect x="65" y="70" width="70" height="50" fill="none" stroke="black" stroke-width="2.5" rx="3"/>
+  
+  <!-- Handle -->
+  <path d="M75,70 Q75,55 100,55 Q125,55 125,70" fill="none" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Divider line -->
+  <line x1="65" y1="90" x2="135" y2="90" stroke="black" stroke-width="2"/>
+  
+  <!-- Lock detail -->
+  <rect x="95" y="95" width="10" height="8" fill="none" stroke="black" stroke-width="1.5" rx="1"/>
+  
+  <!-- Text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="black">BILHAN CONSULTANCY</text>
+</svg>

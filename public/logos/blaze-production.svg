@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Logo: Blaze Production - Flame design -->
+  <!-- Stylized flame -->
+  <path d="M100,55 Q95,70 95,85 Q95,105 105,115 Q115,105 115,85 Q115,70 110,55 Z" fill="black"/>
+  <path d="M100,65 Q98,75 98,82 Q98,95 105,102 Q112,95 112,82 Q112,75 108,65 Z" fill="white"/>
+  
+  <!-- Bottom accent bar -->
+  <rect x="75" y="130" width="50" height="3" fill="black"/>
+  
+  <!-- Text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="black">BLAZE PRODUCTION</text>
+</svg>

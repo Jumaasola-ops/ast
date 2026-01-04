@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import LogosMarquee from '@/components/LogosMarquee';
 import { Check, Cloud, Zap, Lock, Globe, Home as HomeIcon, TrendingUp, ShoppingCart, LayoutDashboard, GraduationCap, ChevronLeft, ChevronRight, MessageCircle, Menu, X } from 'lucide-react';
 
 export default function Home() {
@@ -249,6 +250,9 @@ export default function Home() {
         </div>
         </div>
       </section>
+
+      {/* Logos Marquee Section */}
+      <LogosMarquee />
 
       {/* Competence Pillars Section */}
       <section className="w-full bg-gradient-to-b from-teal-900 to-teal-800 py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">

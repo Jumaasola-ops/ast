@@ -1,0 +1,19 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Logo: Event AST - Calendar/Event symbol -->
+  <!-- Calendar grid -->
+  <rect x="65" y="60" width="70" height="65" fill="none" stroke="black" stroke-width="2.5" rx="3"/>
+  
+  <!-- Calendar header -->
+  <rect x="65" y="60" width="70" height="15" fill="black"/>
+  
+  <!-- Grid lines -->
+  <line x1="65" y1="75" x2="135" y2="75" stroke="black" stroke-width="1.5"/>
+  <line x1="95" y1="60" x2="95" y2="125" stroke="black" stroke-width="1.5"/>
+  <line x1="115" y1="60" x2="115" y2="125" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="black">EVENT AST</text>
+</svg>

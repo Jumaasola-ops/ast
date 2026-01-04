@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Logo: Geometric design for "Perfect Media" -->
+  <!-- Circle with play button -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Play button triangle -->
+  <polygon points="90,80 90,120 125,100" fill="black"/>
+  
+  <!-- Text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="black">PERFECT MEDIA</text>
+</svg>
