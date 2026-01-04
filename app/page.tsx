@@ -99,7 +99,9 @@ export default function Home() {
 
               {/* CTA Button */}
               <button className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm transition">
-                <span>+</span>
+                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 border-white flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-xs sm:text-sm font-bold">+</span>
+                </div>
                 <span>Book a Strategy Call</span>
               </button>
 
